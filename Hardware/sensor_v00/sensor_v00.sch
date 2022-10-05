@@ -1,0 +1,339 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4350 2980 2    50   Input ~ 0
+SCL
+$Comp
+L ESP32DEVKITV1:ESP32DEVKITV1 U101
+U 1 1 62049B14
+P 3310 3730
+F 0 "U101" H 3510 4885 50  0000 C CNN
+F 1 "ESP32DEVKITV1" V 3510 4080 50  0001 L BNN
+F 2 "ESP32DEVKITV1:ESP32-DEVKITV1" V 3510 4080 50  0001 L BNN
+F 3 "" V 3510 4080 50  0001 L BNN
+F 4 "Do it" V 3510 4080 50  0001 L BNN "MF"
+F 5 "Dual core, Wi-Fi: 2.4 GHz up to 150 Mbits/s,BLE (Bluetooth Low Energy) and legacy Bluetooth, 32 bits, Up to 240 MHz" V 3510 4080 50  0001 L BNN "Description"
+F 6 "None" V 3510 4080 50  0001 L BNN "Price"
+F 7 "Package" V 3510 4080 50  0001 L BNN "Package"
+F 8 "No availability data" V 3510 4080 50  0001 L BNN "Availability"
+F 9 "ESP32 DEVKIT V1" V 3510 4080 50  0001 L BNN "MP"
+	1    3310 3730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2980 4210 2980
+Text GLabel 4360 3280 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4210 3280 4360 3280
+Text GLabel 4410 4280 2    50   Input ~ 0
+3v3
+Wire Wire Line
+	4210 4280 4410 4280
+$Comp
+L connectors:HEADER-1x04 J101
+U 1 1 6204C84C
+P 5220 2920
+F 0 "J101" V 5225 2687 60  0000 R CNB
+F 1 "SHT31" V 5134 2687 40  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5220 2920 60  0001 C CNN
+F 3 "" H 5220 2920 60  0001 C CNN
+F 4 "-" H 5170 3270 40  0001 L BNN "Part"
+F 5 "Connector" H 5170 3370 40  0001 L BNN "Family"
+	1    5220 2920
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5070 3150 3    50   Input ~ 0
+SDA
+Text GLabel 5170 3150 3    50   Input ~ 0
+SCL
+Wire Wire Line
+	5070 3150 5070 3070
+Wire Wire Line
+	5170 3150 5170 3070
+Text GLabel 5400 3140 2    50   Input ~ 0
+3v3
+Wire Wire Line
+	5370 3070 5370 3140
+Wire Wire Line
+	5370 3140 5400 3140
+$Comp
+L connectors:HEADER-1x04 J103
+U 1 1 62050C28
+P 6140 2910
+F 0 "J103" V 6145 2678 60  0000 R CNB
+F 1 "SGP30" V 6054 2678 40  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6140 2910 60  0001 C CNN
+F 3 "" H 6140 2910 60  0001 C CNN
+F 4 "-" H 6090 3260 40  0001 L BNN "Part"
+F 5 "Connector" H 6090 3360 40  0001 L BNN "Family"
+	1    6140 2910
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5990 3140 3    50   Input ~ 0
+SDA
+Text GLabel 6090 3140 3    50   Input ~ 0
+SCL
+Wire Wire Line
+	5990 3140 5990 3060
+Wire Wire Line
+	6090 3140 6090 3060
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 62050C32
+P 6200 3260
+F 0 "#PWR0104" H 6200 3010 50  0001 C CNN
+F 1 "GNDREF" H 6205 3087 50  0000 C CNN
+F 2 "" H 6200 3260 50  0001 C CNN
+F 3 "" H 6200 3260 50  0001 C CNN
+	1    6200 3260
+	1    0    0    -1  
+$EndComp
+Text GLabel 6320 3130 2    50   Input ~ 0
+3v3
+Wire Wire Line
+	6200 3260 6200 3060
+Wire Wire Line
+	6200 3060 6190 3060
+Wire Wire Line
+	6290 3060 6290 3130
+Wire Wire Line
+	6290 3130 6320 3130
+$Comp
+L connectors:HEADER-1x05 TLS2561
+U 1 1 6205124B
+P 6940 2910
+F 0 "TLS2561" V 6945 2627 60  0000 R CNB
+F 1 "HEADER-1x05" V 6854 2627 40  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 6940 2910 60  0001 C CNN
+F 3 "" H 6940 2910 60  0001 C CNN
+F 4 "-" H 6890 3310 40  0001 L BNN "Part"
+F 5 "Connector" H 6890 3410 40  0001 L BNN "Family"
+	1    6940 2910
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5810 4030 2    50   Input ~ 0
+3v3
+Text GLabel 5600 4030 3    50   Input ~ 0
+SCL
+Text GLabel 5490 4040 3    50   Input ~ 0
+SDA
+Wire Wire Line
+	5810 4030 5790 4030
+Wire Wire Line
+	5790 4030 5790 3950
+Wire Wire Line
+	5600 4030 5600 3950
+Wire Wire Line
+	5600 3950 5590 3950
+Wire Wire Line
+	5490 3950 5490 4040
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 6205925E
+P 6900 3100
+F 0 "#PWR0105" H 6900 2850 50  0001 C CNN
+F 1 "GNDREF" H 6905 2927 50  0000 C CNN
+F 2 "" H 6900 3100 50  0001 C CNN
+F 3 "" H 6900 3100 50  0001 C CNN
+	1    6900 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7010 3200 3    50   Input ~ 0
+SCL
+Text GLabel 7130 3190 3    50   Input ~ 0
+SDA
+Text GLabel 6740 3230 3    50   Input ~ 0
+3v3
+Wire Wire Line
+	6740 3230 6740 3060
+Wire Wire Line
+	6900 3100 6840 3100
+Wire Wire Line
+	6840 3100 6840 3060
+Wire Wire Line
+	7010 3200 7010 3090
+Wire Wire Line
+	7010 3090 6940 3090
+Wire Wire Line
+	6940 3090 6940 3060
+Wire Wire Line
+	7130 3190 7130 3110
+Wire Wire Line
+	7130 3110 7040 3110
+Wire Wire Line
+	7040 3110 7040 3060
+NoConn ~ 5390 3950
+NoConn ~ 5290 3950
+NoConn ~ 7140 3060
+NoConn ~ 2810 4280
+NoConn ~ 2810 4180
+NoConn ~ 2810 4080
+NoConn ~ 2810 3980
+NoConn ~ 2810 3880
+NoConn ~ 2810 3780
+NoConn ~ 2810 3580
+NoConn ~ 2810 3480
+NoConn ~ 2810 3380
+NoConn ~ 2810 3280
+NoConn ~ 2810 3180
+NoConn ~ 2810 3080
+NoConn ~ 2810 2980
+NoConn ~ 2810 2880
+NoConn ~ 4210 3080
+NoConn ~ 4210 3180
+NoConn ~ 4210 3880
+NoConn ~ 4210 3780
+NoConn ~ 4210 3680
+NoConn ~ 2810 3680
+Text GLabel 4310 3380 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	4210 3380 4310 3380
+Text GLabel 4280 2880 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4210 2880 4280 2880
+Text GLabel 4290 3480 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4210 3480 4290 3480
+Text GLabel 4300 3580 2    50   Input ~ 0
+NSS
+Wire Wire Line
+	4210 3580 4300 3580
+Text GLabel 4300 4080 2    50   Input ~ 0
+DIO0
+Wire Wire Line
+	4210 4080 4300 4080
+Text GLabel 4310 3980 2    50   Input ~ 0
+RST
+Wire Wire Line
+	4210 3980 4310 3980
+$Comp
+L connectors:HEADER-1x12 J102
+U 1 1 620731A8
+P 3870 1800
+F 0 "J102" V 4127 1798 60  0000 C CNB
+F 1 "HEADER-1x12" V 4036 1798 40  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x12_P1.27mm_Vertical" H 3870 1800 60  0001 C CNN
+F 3 "" H 3870 1800 60  0001 C CNN
+F 4 "-" H 3820 2550 40  0001 L BNN "Part"
+F 5 "Connector" H 3820 2650 40  0001 L BNN "Family"
+	1    3870 1800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4120 2020 3    50   Input ~ 0
+SCK
+Text GLabel 3920 2020 3    50   Input ~ 0
+MISO
+Text GLabel 4020 2020 3    50   Input ~ 0
+MOSI
+Text GLabel 3320 2020 3    50   Input ~ 0
+RST
+Text GLabel 3820 2020 3    50   Input ~ 0
+NSS
+Text GLabel 3420 2020 3    50   Input ~ 0
+3v3
+Text GLabel 3520 2020 3    50   Input ~ 0
+DIO0
+Wire Wire Line
+	3320 2020 3320 1950
+Wire Wire Line
+	3420 2020 3420 1950
+Wire Wire Line
+	3520 2020 3520 1950
+Wire Wire Line
+	3820 2020 3820 1950
+Wire Wire Line
+	4020 2020 4020 1950
+Wire Wire Line
+	4120 2020 4120 1950
+Wire Wire Line
+	3920 1950 3920 2020
+$Comp
+L power:GNDREF #PWR0107
+U 1 1 6208FDDF
+P 4420 2010
+F 0 "#PWR0107" H 4420 1760 50  0001 C CNN
+F 1 "GNDREF" H 4425 1837 50  0000 C CNN
+F 2 "" H 4420 2010 50  0001 C CNN
+F 3 "" H 4420 2010 50  0001 C CNN
+	1    4420 2010
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3620 1950
+NoConn ~ 3720 1950
+NoConn ~ 4220 1950
+NoConn ~ 4320 1950
+Wire Wire Line
+	4420 1950 4420 2010
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 6204F513
+P 5280 3070
+F 0 "#PWR0102" H 5280 2820 50  0001 C CNN
+F 1 "GNDREF" H 5285 2897 50  0000 C CNN
+F 2 "" H 5280 3070 50  0001 C CNN
+F 3 "" H 5280 3070 50  0001 C CNN
+	1    5280 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:HEADER-1x06 BME680
+U 1 1 620524DF
+P 5540 3800
+F 0 "BME680" V 5545 3467 60  0000 R CNB
+F 1 "HEADER-1x06" V 5454 3467 40  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5540 3800 60  0001 C CNN
+F 3 "" H 5540 3800 60  0001 C CNN
+F 4 "-" H 5490 4250 40  0001 L BNN "Part"
+F 5 "Connector" H 5490 4350 40  0001 L BNN "Family"
+	1    5540 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 6205541F
+P 5720 4140
+F 0 "#PWR0103" H 5720 3890 50  0001 C CNN
+F 1 "GNDREF" H 5725 3967 50  0000 C CNN
+F 2 "" H 5720 4140 50  0001 C CNN
+F 3 "" H 5720 4140 50  0001 C CNN
+	1    5720 4140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5690 3950 5720 3950
+Wire Wire Line
+	5720 3950 5720 4140
+Wire Wire Line
+	4770 4180 4770 4210
+Wire Wire Line
+	4210 4180 4770 4180
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 6204B8D0
+P 4770 4210
+F 0 "#PWR0101" H 4770 3960 50  0001 C CNN
+F 1 "GNDREF" H 4775 4037 50  0000 C CNN
+F 2 "" H 4770 4210 50  0001 C CNN
+F 3 "" H 4770 4210 50  0001 C CNN
+	1    4770 4210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5270 3070 5280 3070
+$EndSCHEMATC
