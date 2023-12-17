@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HESTIA - Irrigação</title>
+    <style>
+      /* Estilo para o header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        background-color: #633069; /* nova cor do header */
+        color: white;
+        padding: 0 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+      }
+      
+      /* Estilo para os botões no header */
+      header button {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #633069;
+        color: white;
+        border: 10;
+        cursor: pointer;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      
+      /* Estilo para o título no header */
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: normal;
+        text-align: right;
+      }
+      
+      /* Estilo para a imagem no meio da página */
+      main img {
+        display: block;
+        margin: 30px auto;
+        max-width: 90%;
+        height: 90%;
+      }
+      
+      /* Estilo para o footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #633069; /* nova cor do footer */
+        color: white;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.26);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>CMESI - Demeter Gateway</h2>
+      <button onclick="window.location.href='rede.html'">Rede</button>
+      <button onclick="window.location.href='redeSensores.html'">Rede de Sensores</button>
+      <button onclick="window.location.href='info.html'">Info</button>
+    </header>
+    <main>
+      <img src="img" alt="Sistema de Irrigação">
+    </main>
+    <footer>
+      CMESI Sistemas Inteligentes
+    </footer>
+  </body>
+</html>

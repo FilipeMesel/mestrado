@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HESTIA - Irrigação</title>
+    <style>
+      /* Estilo para o header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        background-color: #633069; /* nova cor do header */
+        color: white;
+        padding: 0 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+      }
+      
+      /* Estilo para os botões no header */
+      header button {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #633069;
+        color: white;
+        border: 10;
+        cursor: pointer;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      
+      /* Estilo para o título no header */
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: normal;
+        text-align: right;
+      }
+      
+      /* Estilo para a imagem no meio da página */
+      main img {
+        display: block;
+        margin: 30px auto;
+        max-width: auto;
+        height: auto;
+      }
+      
+      /* Estilo para o footer */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #633069; /* nova cor do footer */
+        color: white;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.26);
+        margin-bottom: 500px;
+      }
+      /* Estilo para o formulário */
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-color: black;
+        border: 10px;
+        margin-top: 50px;
+        width: 80%;
+        margin: 50px auto;
+      }
+      
+      /* Estilo para os labels */
+      label {
+        font-size: 18px;
+        margin-bottom: 10px;
+        width: 45%;
+      }
+      
+      /* Estilo para os inputs */
+      input[type="text"], input[type="password"], select, input[type="number"] {
+        width: 45%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+      }
+      
+      /* Estilo para o botão */
+      button[type="submit"] {
+        background-color: #633069;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        width: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>CMESI - Demeter Gateway</h2>
+      <button onclick="window.location.href='rede.html'">Rede</button>
+      <button onclick="window.location.href='redeSensores.html'">Rede de Sensores</button>
+      <button onclick="window.location.href='info.html'">Info</button>
+    </header>
+    <div class="form-container">
+      <h2>Sobre o dispositivo</h2>
+        <p> Equipamento desenvolvido nacionalmente pela CMESI ENGENHARIA E SISTEMAS INTELIGENTES Ltda com a finalidade de realizar a telegestão de animais de grande porte em Fazendas. <br><br>
+Ao pressionar
+        <button style="background-color: #633069; color: white; border: none; border-radius: 5px; padding: 10px 20px; font-size: 15px; cursor: pointer; width: 45%;" onclick="resetar()">REINICIAR</button>
+o dispositivo será reinicado com as configurações e edições salvas.
+    </div>
+    <script>
+
+      function resetar() {
+        event.preventDefault();
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert("Reiniciando o sistema!");
+            }else {
+              console.log("error: ", this.status)
+            }
+        };
+        xhttp.open("POST", "/resetAjx", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("reset=1");
+      }
+  
+    </script>
+    <footer>
+      CMESI Sistemas Inteligentes
+    </footer>
+  </body>
+</html>
